@@ -1,0 +1,12 @@
+➜  txtanimation g++ --version
+g++ (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+➜  txtanimation g++ run_animation_parser.cpp -o run_animation_parser   
+➜  txtanimation g++ run_animation.cpp -o run_animation        
+➜  txtanimation ls
+anims  bad  common  compilerinfo.txt  include  libinfo.txt  run_animation  run_animation.cpp  run_animation_parser  run_animation_parser.cpp  txtanimation.h  txtanimation_parser.h
+➜  txtanimation 
+

@@ -1,0 +1,7 @@
+filename:	checkarg.h	
+version: 	1.0-relase
+for:	 	checking command line arguments
+funcount:	7
+created: 	n/a
+created by:	Dolfost
+

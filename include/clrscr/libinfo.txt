@@ -1,0 +1,11 @@
+filename:	clrscr.h	
+version:	1.0-relase
+for:		screen cleaning 	
+funcount:	1
+created: 	16/07/21
+created by:	Dolfost
+
+usage: 
+<-void
+clrscr(void)
+-clears the scren

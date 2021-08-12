@@ -1,0 +1,30 @@
+filename: 	ansicolors.h
+version:	2.0-relase/rework1
+for:		coloring the output using ANSI 
+funcount:	2
+created:	25/07/2021
+created by:	Dolfost
+
+changes:
+
+2.0-relase/rework1 28/07/2021		fully reworked the libriary, added the 
+					setFRGRND() and setBKGRND() functions;
+
+
+usage:
+
+:>void
+setFRGRND OR setFOREGROUND(char[] 	  code :> code in string (only first 3 symbols will be readed));
+:>void
+setFRGRND OR setFOREGROUND(unsigned short code :> code in int (only first 3 digits will be readed));
+-changes foreground color to char[] code or to unsigned short code;
+
+:>void
+setBKGRND OR setBACKGROUND(char[] 	  code :> code in string (only first 3 symbols will be readed));
+:>void
+setBKGRND OR setBACKGROUND(unsigned short code :> code in int (only first 3 digits will be readed));
+-changes background color to char[] code or to unsigned short code;
+
+->for reset all modes and colors: sRST
+
+resourses: https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797

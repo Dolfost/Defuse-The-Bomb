@@ -1,0 +1,40 @@
+filename:	fcheck.h	
+version:	1.5-relase
+for:		checking fstream objects for errors
+funcount:	6
+created: 	16/07/21
+created by:	Dolfost
+
+
+
+usage:
+
+<-bool :> true if stream.is_open()
+is_open(ifstream&, ofstream& :> main object
+	char[], char*[] :> filename of file
+	bool :> exit if filename is closed)
+-checks ifstream object are he hold opened file
+
+
+<-bool :> true if ifstream.good() == true 
+ifstrm_status(ifstream& :> main object
+	      char[], char*[] :> filename
+	      bool :> exit if something wrong (dont reacting to eof)
+	      bool :> return faslse if reached eof
+	      bool :> slient (disable messages)) 
+-checks ifstream objects for errors
+
+
+<-bool :> if eof was reached
+eof_msg(ifstream& :> main object
+	char[], char*[] :> filename
+	bool :> exit if eof was reached)
+-prints eof warning
+
+tip: you can change error preffix and error messages in messages/ directory. 
+     example: messages/default.h, current.h -- file in use now
+
+changes:
+22/07/2021 1.4-relase		rework of ifstrm_status();
+24/07/2021 1.5-relase		added messages/ directory and ability to easily modify messages;
+26/07/2021 1.5-relase		added support for const char[]
